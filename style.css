@@ -38,7 +38,7 @@ html, body {
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    background-image: url(./img/profile.png);
+    background-image: url(./profile.png);
     opacity: 90%;
     margin: 30px;
     background-size: cover;
@@ -122,17 +122,17 @@ section a:hover {
 }
 
 #mbti {
-    background-image: url(./img/esfj.png);
+    background-image: url(./esfj.png);
     background-size: 100%;
 }
 
 #hobby {
-    background-image: url(./img/baking.jpeg);
+    background-image: url(./baking.jpeg);
     background-size: 100%;
 }
 
 #dog {
-    background-image: url(./img/jiho.jpeg);
+    background-image: url(./jiho.jpeg);
     background-size: 100%;
 }
 
@@ -160,17 +160,17 @@ section a:hover {
 }
 
 #html {
-    background-image: url(./img/html.png);
+    background-image: url(./html.png);
     background-size: 100%;
 }
 
 #css {
-    background-image: url(./img/css.png);
+    background-image: url(./css.png);
     background-size: 100%;
 }
 
 #js {
-    background-image: url(./img/js.png);
+    background-image: url(./js.png);
     background-size: 100%;
 }
 
