@@ -1,0 +1,243 @@
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #DAF5FD;
+    background-size: 100%;
+    scroll-behavior: smooth;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.left__upper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.left__upper #profile {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(./img/profile.png);
+    opacity: 90%;
+    margin: 30px;
+    background-size: cover;
+}
+
+.left__footer {
+    width: 100%;
+    height: 60%;
+}
+
+section {
+    font-family: monospace;
+    font-style: italic;
+    text-shadow: -1px 0 lightslategray, 0 1px lightslategray, 1px 0 lightslategray, 0 -1px lightslategray  ;
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section a {
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+section h5 {
+    margin: 20px;
+}
+
+section a:hover {
+    color: #ffef96;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.right {
+    width: 70%;
+    height: 400%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movingText {
+    width: 100%;
+    height: 100%;
+    line-height: 800%;
+    color:  aliceblue;
+    font-size: 80px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: monospace;
+    font-style: italic;
+    text-shadow: -2px 0 lightslategray, 0 2px lightslategray, 2px 0 lightslategray, 0 -2px lightslategray  ;
+}
+
+.about {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mbti {
+    background-image: url(./img/esfj.png);
+    background-size: 100%;
+}
+
+#hobby {
+    background-image: url(./img/baking.jpeg);
+    background-size: 100%;
+}
+
+#dog {
+    background-image: url(./img/jiho.jpeg);
+    background-size: 100%;
+}
+
+.about div {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.skill {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skill div {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#html {
+    background-image: url(./img/html.png);
+    background-size: 100%;
+}
+
+#css {
+    background-image: url(./img/css.png);
+    background-size: 100%;
+}
+
+#js {
+    background-image: url(./img/js.png);
+    background-size: 100%;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    font-size: 30px;
+    margin: 30px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.contact {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#gmail {
+    border: 3px solid steelblue;
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-color:#DAF5FD;
+
+    }
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .left__upper {
+        display: none;
+        height: 0%;
+    }
+
+    .left__footer {
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .movingText {
+        width: 100%;
+        height: 100%;
+        line-height: 250px;
+        text-align: center;
+        color: #ffef96;
+        font-size: 60px;
+        font-weight: 500;
+        font-style: italic;
+        font-family: monospace;
+        font-style: italic;
+        text-shadow: -2px 0 lightslategray, 0 2px lightslategray, 2px 0 lightslategray, 0 -2px lightslategray  ;
+    }
+
+    .dev{
+        display: none;
+    }
+}
